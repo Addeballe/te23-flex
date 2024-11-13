@@ -12,6 +12,8 @@ body {
 .container {
   width: min(100% - 3rem, var(--container-max, 60ch));
   margin-inline: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .region {
@@ -27,4 +29,13 @@ body {
   header svg {
     display: none;
   }
+}
+
+.d-flex {
+  width: min(100% - 3rem, var(--container-max, 60ch));
+  margin-inline: auto;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
 }
